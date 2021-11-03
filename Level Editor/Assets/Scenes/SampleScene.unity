@@ -6155,6 +6155,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5367661420909196149, guid: 2be14793abd93734f97a62ea82c5ae09, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 7901460556717922311, guid: 2be14793abd93734f97a62ea82c5ae09, type: 3}
       propertyPath: m_Name
       value: HPowerUp

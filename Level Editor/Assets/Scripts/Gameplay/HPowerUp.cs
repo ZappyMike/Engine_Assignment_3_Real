@@ -13,9 +13,14 @@ public class HPowerUp : MonoBehaviour
     static float HPup = 3f;
     static float speed = 180;
 
+    private GameObject player;
+    private bool dirty = false;
+
     private void Start()
     {
         HPup = getHPup();
+        dirty = false;
+        player = GameObject.Find("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +34,18 @@ public class HPowerUp : MonoBehaviour
 
     private void Update()
     {
-        transform.rotation *= Quaternion.AngleAxis(Time.deltaTime * speed, Vector3.up);
+        if((Mathf.Abs(player.transform.position.x - gameObject.transform.position.x) <= 17f) 
+            && (Mathf.Abs(player.transform.position.y - gameObject.transform.position.y) <= 13f))
+        {
+            dirty = true;
+        }
+
+        if (dirty)
+        {
+            transform.rotation *= Quaternion.AngleAxis(Time.deltaTime * speed, Vector3.up);
+        }
+
+        dirty = false;
+
     }
 }
