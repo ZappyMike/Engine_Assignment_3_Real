@@ -6,7 +6,8 @@ Description:
 
 This game is a 2.5D platforming game. The player can move jump, attack and wall jump in order to fight enemies and reach the goal block at the end of the stage. In the level editor, the user gains control of anything that has a hitbox, aka everything. they can move them, scale them and even delete them (no deleting the player though). The editor trakcs these changes and allows for undoing and redoing them. they can access this by jsut pausing the game (pressing P), this will pause physics, so do be wary of the players velocity when pausing.
 
-By: Matthew McPherson (100757379)
+Base Assignment 2 Code By: Jonthan Jay(100743575) && Matthew McPherson (100757379)
+New Code for Assignment 3 by: Matthew McPherson (100757379)
 
 Video Link: https://www.youtube.com/watch?v=gTfReEADvTM
 
