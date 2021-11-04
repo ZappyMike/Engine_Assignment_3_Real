@@ -15,39 +15,37 @@ extern "C"
 	
 	float EXPORT_API getMaxHP()
 	{
-		srand(time(0));
-
-		return 1 + rand() % 25;
+		return 10;
 	}
 
 	float EXPORT_API getSpeed()
 	{
-		return 1 + rand() % 20;
+		return 10;
 	}
 
 	float EXPORT_API getDamage()
 	{
-		return 1 + rand() % 20;
+		return 1;
 	}
 
 	float EXPORT_API getHPup()
 	{
-		return 1 + rand() % 10;
+		return 5;
 	}
 
 	float EXPORT_API getEnemyDamage()
 	{
-		return 1 + rand() % 25;
+		return 2;
 	}
 
 	float EXPORT_API getEnemySpeed()
 	{
-		return 1 + rand() % 20;
+		return 6;
 	}
 
 	float EXPORT_API getEnemyHP()
 	{
-		return 1 + rand() % 20;
+		return 3;
 	}
 	
 }
